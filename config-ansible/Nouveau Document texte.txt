@@ -1,0 +1,9 @@
+apt-get install \
+apt-transport-https \
+ca-certificates \
+software-properties-common \
+curl 
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 
+apt-get install docker.io
+systemctl enable docker 
